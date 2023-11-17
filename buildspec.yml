@@ -1,0 +1,7 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Starting build
+      - aws s3 cp index.html s3://blue-nov-2023-cicd-beta/index.html --acl public-read
